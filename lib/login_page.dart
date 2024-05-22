@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_prj/components/my_button.dart';
 import 'package:test_prj/components/my_textfield.dart';
+import 'package:test_prj/home_page.dart';
 import 'package:test_prj/login_page_2.dart';
 import 'package:test_prj/sign_up.dart';
 
@@ -46,12 +47,6 @@ class LoginPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const SizedBox(height: 50),
-                        // App Icon
-                        // const Icon(
-                        //   Icons.water_drop_outlined,
-                        //   color: Colors.green,
-                        //   size: 60,
-                        // ),
                         Image.asset(
                           "assets/login-logo.png",
                           height: 62,
@@ -96,7 +91,8 @@ class LoginPage extends StatelessWidget {
                               onTap: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => LoginPage2())),
+                                      builder: (context) =>
+                                          const LoginPage2())),
                               child: Container(
                                 height: 45,
                                 width: 160,
@@ -135,7 +131,13 @@ class LoginPage extends StatelessWidget {
                           ],
                         ),
                         const SizedBox(height: 20),
-                        const MyButton(text: "Login"),
+                        GestureDetector(
+                          onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const HomePage())),
+                          child: const MyButton(text: "Login"),
+                        ),
                         const SizedBox(height: 100),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -145,7 +147,7 @@ class LoginPage extends StatelessWidget {
                               onTap: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => SignUp())),
+                                      builder: (context) => const SignUp())),
                               child: const Text(
                                 "Sign Up",
                                 style: TextStyle(
