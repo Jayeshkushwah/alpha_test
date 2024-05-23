@@ -191,8 +191,8 @@ class _ChargingStationsState extends State<ChargingStations> {
           ),
           Row(
             children: [
+              Image.asset("assets/image1.png"),
               Image.asset("assets/image.png"),
-              Image.asset("assets/detailsicon.png"),
             ],
           ),
         ],
