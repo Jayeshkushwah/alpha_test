@@ -7,7 +7,7 @@ class MyButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 56,
+      height: 50,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [

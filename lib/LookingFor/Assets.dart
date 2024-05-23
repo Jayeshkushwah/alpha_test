@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
+import 'package:test_prj/LookingFor/checoutTo.dart';
 import 'package:test_prj/components/my_button.dart';
 import 'package:test_prj/components/my_textfield.dart';
 
@@ -88,7 +89,7 @@ class _AssetsState extends State<Assets> {
                   Padding(
                     padding: const EdgeInsets.only(top: 45.0, left: 100),
                     child: Text(
-                      'Looking For',
+                      'Assets',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
@@ -178,7 +179,13 @@ class _AssetsState extends State<Assets> {
               padding: const EdgeInsets.all(10.0),
               child: Align(
                 alignment: Alignment.centerRight,
-                child: MyButton(text: 'Add Asset type'),
+                child: GestureDetector(
+                  child: MyButton(text: 'Add Asset type'),
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => CheckOutTo()));
+                  },
+                ),
               ),
             ),
             SizedBox(height: 20),
