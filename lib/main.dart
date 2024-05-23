@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_prj/add_fuel_quantity.dart';
-import 'package:test_prj/payment_form.dart';
+import 'package:test_prj/charging_stations.dart';
 import 'package:test_prj/vehicle_number.dart';
 
 void main() {
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: VehicleNumber(),
+      home: ChargingStations(),
     );
   }
 }
