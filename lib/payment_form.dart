@@ -66,10 +66,13 @@ class PaymentForm extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              alignment: Alignment.bottomCenter,
-              child: MyButton(
-                text: "Pay Now",
+            InkWell(
+              onTap: () {},
+              child: Container(
+                alignment: Alignment.bottomCenter,
+                child: MyButton(
+                  text: "Pay Now",
+                ),
               ),
             )
           ],
