@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CartItemSamples extends StatelessWidget {
+  const CartItemSamples({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -10,12 +12,12 @@ class CartItemSamples extends StatelessWidget {
           Card(
             color: Colors.white,
             // Add elevation to give it a shadow effect
-            margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
             child: Padding(
-              padding: EdgeInsets.all(4),
+              padding: const EdgeInsets.all(4),
               child: Row(
                 children: [
                   Container(
@@ -23,7 +25,7 @@ class CartItemSamples extends StatelessWidget {
                     width: 100,
                     decoration:
                         BoxDecoration(borderRadius: BorderRadius.circular(10)),
-                    margin: EdgeInsets.only(right: 10),
+                    margin: const EdgeInsets.only(right: 10),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(
                           10), // Ensure the image corners are rounded
@@ -37,12 +39,12 @@ class CartItemSamples extends StatelessWidget {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsets.symmetric(vertical: 2),
+                      padding: const EdgeInsets.symmetric(vertical: 2),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "Sunfuel - Radisson Blu..",
                             style: TextStyle(
                               fontSize: 20,
@@ -50,7 +52,7 @@ class CartItemSamples extends StatelessWidget {
                               color: Colors.black,
                             ),
                           ),
-                          Row(
+                          const Row(
                             children: [
                               Icon(Icons.location_on),
                               SizedBox(width: 5),
@@ -65,14 +67,14 @@ class CartItemSamples extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Text(
+                              const Text(
                                 "1 Km away",
                                 style: TextStyle(
                                   fontSize: 16,
                                   color: Colors.black54,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Container(
                                 height: 30,
                                 width: 70,
@@ -87,7 +89,7 @@ class CartItemSamples extends StatelessWidget {
                                     )
                                   ],
                                 ),
-                                child: Row(
+                                child: const Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Icon(

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -112,7 +111,7 @@ class HomePage extends StatelessWidget {
                                       "assets/Search.png",
                                       scale: 20,
                                     ),
-                                    fillColor: Color.fromRGBO(245, 245, 245, 1),
+                                    fillColor: const Color.fromRGBO(245, 245, 245, 1),
                                     filled: true,
                                     enabledBorder: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(12),
@@ -123,7 +122,7 @@ class HomePage extends StatelessWidget {
                               ),
                             ),
                           ),
-                          SizedBox(height: 16),
+                          const SizedBox(height: 16),
 
                           // lookign for section
                           Padding(
@@ -132,19 +131,19 @@ class HomePage extends StatelessWidget {
                             child: Container(
                               height: 59,
                               decoration: BoxDecoration(
-                                color: Color.fromRGBO(138, 180, 2, 200),
+                                color: const Color.fromRGBO(138, 180, 2, 200),
                                 border: Border.all(
-                                  color: Color.fromRGBO(138, 180, 2, 10),
+                                  color: const Color.fromRGBO(138, 180, 2, 10),
                                 ),
                                 borderRadius: BorderRadius.circular(8),
                               ),
-                              padding: EdgeInsets.symmetric(horizontal: 16),
+                              padding: const EdgeInsets.symmetric(horizontal: 16),
                               child: Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  Column(
+                                  const Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -180,7 +179,7 @@ class HomePage extends StatelessWidget {
                                 const EdgeInsets.symmetric(horizontal: 20.0),
                             child: Container(
                               height: 240,
-                              padding: EdgeInsets.symmetric(vertical: 20),
+                              padding: const EdgeInsets.symmetric(vertical: 20),
                               child: Column(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
@@ -196,8 +195,8 @@ class HomePage extends StatelessWidget {
                                               "assets/dummy.png",
                                               height: 60,
                                             ),
-                                            SizedBox(height: 10),
-                                            Text(
+                                            const SizedBox(height: 10),
+                                            const Text(
                                               "Rescue fuel",
                                               style: TextStyle(
                                                 color: Color.fromRGBO(
@@ -214,8 +213,8 @@ class HomePage extends StatelessWidget {
                                               "assets/dummy.png",
                                               height: 60,
                                             ),
-                                            SizedBox(height: 10),
-                                            Text(
+                                            const SizedBox(height: 10),
+                                            const Text(
                                               "Fuels",
                                               style: TextStyle(
                                                 color: Color.fromRGBO(
@@ -232,8 +231,8 @@ class HomePage extends StatelessWidget {
                                               "assets/dummy.png",
                                               height: 60,
                                             ),
-                                            SizedBox(height: 10),
-                                            Text(
+                                            const SizedBox(height: 10),
+                                            const Text(
                                               "Insurance",
                                               style: TextStyle(
                                                 color: Color.fromRGBO(
@@ -256,8 +255,8 @@ class HomePage extends StatelessWidget {
                                               "assets/dummy.png",
                                               height: 60,
                                             ),
-                                            SizedBox(height: 10),
-                                            Text(
+                                            const SizedBox(height: 10),
+                                            const Text(
                                               "Rescue fuel",
                                               style: TextStyle(
                                                 color: Color.fromRGBO(
@@ -274,8 +273,8 @@ class HomePage extends StatelessWidget {
                                               "assets/dummy.png",
                                               height: 60,
                                             ),
-                                            SizedBox(height: 10),
-                                            Text(
+                                            const SizedBox(height: 10),
+                                            const Text(
                                               "Battery",
                                               style: TextStyle(
                                                 color: Color.fromRGBO(
@@ -292,8 +291,8 @@ class HomePage extends StatelessWidget {
                                               "assets/dummy.png",
                                               height: 60,
                                             ),
-                                            SizedBox(height: 10),
-                                            Text(
+                                            const SizedBox(height: 10),
+                                            const Text(
                                               "Car Wash",
                                               style: TextStyle(
                                                 color: Color.fromRGBO(
@@ -310,15 +309,15 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
 
-                          Padding(
+                          const Padding(
                             padding:
-                                const EdgeInsets.symmetric(horizontal: 20.0),
+                                EdgeInsets.symmetric(horizontal: 20.0),
                             child: Divider(
                               color: Color.fromRGBO(138, 180, 2, 100),
                               thickness: 2,
                             ),
                           ),
-                          SizedBox(height: 25),
+                          const SizedBox(height: 25),
 
                           // slider
                           Image.asset(
@@ -326,16 +325,16 @@ class HomePage extends StatelessWidget {
                             height: 180,
                             fit: BoxFit.cover,
                           ),
-                          SizedBox(height: 30),
+                          const SizedBox(height: 30),
                           Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 color: Color.fromRGBO(255, 243, 236, 1)),
-                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                SizedBox(height: 28),
-                                Text(
+                                const SizedBox(height: 28),
+                                const Text(
                                   "Products",
                                   style: TextStyle(
                                       fontSize: 20,
@@ -351,7 +350,7 @@ class HomePage extends StatelessWidget {
                               ],
                             ),
                           ),
-                          Row(),
+                          const Row(),
                         ],
                       ),
                     ),
@@ -377,7 +376,7 @@ Widget productTile() {
     ),
     child: Row(
       children: [
-        SizedBox(width: 4),
+        const SizedBox(width: 4),
         Container(
           height: 92,
           width: 92,
@@ -386,8 +385,8 @@ Widget productTile() {
             borderRadius: BorderRadius.circular(8),
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(14.0),
+        const Padding(
+          padding: EdgeInsets.all(14.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -402,7 +401,7 @@ Widget productTile() {
               Text(
                 "Order Now",
                 style: TextStyle(
-                  color: const Color.fromRGBO(255, 138, 13, 1),
+                  color: Color.fromRGBO(255, 138, 13, 1),
                   fontSize: 16,
                 ),
               ),

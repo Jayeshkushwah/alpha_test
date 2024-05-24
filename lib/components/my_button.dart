@@ -9,7 +9,7 @@ class MyButton extends StatelessWidget {
     return Container(
       height: 56,
       decoration: BoxDecoration(
-        gradient: LinearGradient(
+        gradient: const LinearGradient(
           colors: [
             Color.fromRGBO(138, 180, 2, 1),
             Color.fromRGBO(59, 120, 31, 1),
@@ -20,7 +20,7 @@ class MyButton extends StatelessWidget {
       alignment: Alignment.center,
       child: Text(
         text,
-        style: TextStyle(color: Colors.white),
+        style: const TextStyle(color: Colors.white),
       ),
     );
   }

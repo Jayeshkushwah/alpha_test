@@ -28,7 +28,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
         children: [
           Container(
             height: 140,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.center,
@@ -43,17 +43,17 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 bottomRight: Radius.circular(23),
               ),
             ),
-            child: Row(
+            child: const Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 45.0, left: 20),
+                  padding: EdgeInsets.only(top: 45.0, left: 20),
                   child: Icon(
                     Icons.arrow_back,
                     color: Colors.white,
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 45.0, left: 80),
+                  padding: EdgeInsets.only(top: 45.0, left: 80),
                   child: Text(
                     'Payment Type',
                     style: TextStyle(
@@ -66,8 +66,8 @@ class _PaymentScreenState extends State<PaymentScreen> {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 10, right: 100),
+          const Padding(
+            padding: EdgeInsets.only(top: 10, right: 100),
             child: Text(
               'Select payment method',
               style: TextStyle(
@@ -77,7 +77,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 30),
+            padding: const EdgeInsets.only(top: 30),
             child: Container(
                 width: 325,
                 height: 55,
@@ -103,11 +103,11 @@ class _PaymentScreenState extends State<PaymentScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text("Visa",
                           style: _type == 1
-                              ? TextStyle(
+                              ? const TextStyle(
                                   fontSize: 17,
                                   fontWeight: FontWeight.w500,
                                   color: Colors.black)
-                              : TextStyle(
+                              : const TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w500,
                                   color: Colors.grey,
@@ -126,7 +126,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 ))),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 15),
+            padding: const EdgeInsets.only(top: 15),
             child: Container(
                 width: 325,
                 height: 55,
@@ -152,11 +152,11 @@ class _PaymentScreenState extends State<PaymentScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text("Phone Pay",
                           style: _type == 2
-                              ? TextStyle(
+                              ? const TextStyle(
                                   fontSize: 17,
                                   fontWeight: FontWeight.w500,
                                   color: Colors.black)
-                              : TextStyle(
+                              : const TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w500,
                                   color: Colors.grey,
@@ -175,7 +175,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 ))),
           ),
           Padding(
-              padding: EdgeInsets.only(top: 15),
+              padding: const EdgeInsets.only(top: 15),
               child: Container(
                 width: 325,
                 height: 55,
@@ -201,11 +201,11 @@ class _PaymentScreenState extends State<PaymentScreen> {
                           padding: const EdgeInsets.only(left: 20),
                           child: Text("UPI Payment",
                               style: _type == 3
-                                  ? TextStyle(
+                                  ? const TextStyle(
                                       fontSize: 17,
                                       fontWeight: FontWeight.w500,
                                       color: Colors.black)
-                                  : TextStyle(
+                                  : const TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.w500,
                                       color: Colors.grey,
@@ -226,7 +226,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 )),
               )),
           Padding(
-              padding: EdgeInsets.only(top: 15),
+              padding: const EdgeInsets.only(top: 15),
               child: Container(
                 width: 325,
                 height: 55,
@@ -252,11 +252,11 @@ class _PaymentScreenState extends State<PaymentScreen> {
                           padding: const EdgeInsets.only(left: 20),
                           child: Text("Google Pay",
                               style: _type == 4
-                                  ? TextStyle(
+                                  ? const TextStyle(
                                       fontSize: 17,
                                       fontWeight: FontWeight.w500,
                                       color: Colors.black)
-                                  : TextStyle(
+                                  : const TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.w500,
                                       color: Colors.grey,
@@ -277,7 +277,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 )),
               )),
           Padding(
-              padding: EdgeInsets.only(top: 15),
+              padding: const EdgeInsets.only(top: 15),
               child: Container(
                 width: 325,
                 height: 55,
@@ -303,11 +303,11 @@ class _PaymentScreenState extends State<PaymentScreen> {
                           padding: const EdgeInsets.only(left: 20),
                           child: Text("Pay at Station",
                               style: _type == 5
-                                  ? TextStyle(
+                                  ? const TextStyle(
                                       fontSize: 17,
                                       fontWeight: FontWeight.w500,
                                       color: Colors.black)
-                                  : TextStyle(
+                                  : const TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.w500,
                                       color: Colors.grey,
@@ -328,7 +328,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 )),
               )),
           Padding(
-              padding: EdgeInsets.only(top: 15),
+              padding: const EdgeInsets.only(top: 15),
               child: Container(
                 width: 325,
                 height: 55,
@@ -354,11 +354,11 @@ class _PaymentScreenState extends State<PaymentScreen> {
                           padding: const EdgeInsets.only(left: 20),
                           child: Text("Pay by wallet",
                               style: _type == 6
-                                  ? TextStyle(
+                                  ? const TextStyle(
                                       fontSize: 17,
                                       fontWeight: FontWeight.w500,
                                       color: Colors.black)
-                                  : TextStyle(
+                                  : const TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.w500,
                                       color: Colors.grey,
@@ -379,7 +379,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 )),
               )),
           Padding(
-              padding: EdgeInsets.only(top: 15),
+              padding: const EdgeInsets.only(top: 15),
               child: Container(
                 width: 325,
                 height: 55,
@@ -405,11 +405,11 @@ class _PaymentScreenState extends State<PaymentScreen> {
                           padding: const EdgeInsets.only(left: 20),
                           child: Text("Pay by My fuels card",
                               style: _type == 7
-                                  ? TextStyle(
+                                  ? const TextStyle(
                                       fontSize: 17,
                                       fontWeight: FontWeight.w500,
                                       color: Colors.black)
-                                  : TextStyle(
+                                  : const TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.w500,
                                       color: Colors.grey,
@@ -429,17 +429,17 @@ class _PaymentScreenState extends State<PaymentScreen> {
                   ],
                 )),
               )),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           Container(
             alignment: Alignment.bottomCenter,
             width: 330,
-            child: MyButton(
+            child: const MyButton(
               text: 'Continue',
             ),
           ),
-          SizedBox(width: 80),
+          const SizedBox(width: 80),
         ],
       ),
     );

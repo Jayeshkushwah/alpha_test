@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:test_prj/components/my_button.dart';
 import 'package:test_prj/components/my_hinttext_field.dart';
 
@@ -70,7 +68,7 @@ class PaymentForm extends StatelessWidget {
               onTap: () {},
               child: Container(
                 alignment: Alignment.bottomCenter,
-                child: MyButton(
+                child: const MyButton(
                   text: "Pay Now",
                 ),
               ),

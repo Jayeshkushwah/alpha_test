@@ -17,7 +17,7 @@ class _CheckOutState extends State<CheckOut> {
         children: [
           Container(
             height: 100,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.center,
@@ -32,17 +32,17 @@ class _CheckOutState extends State<CheckOut> {
                 bottomRight: Radius.circular(23),
               ),
             ),
-            child: Row(
+            child: const Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 45.0, left: 20),
+                  padding: EdgeInsets.only(top: 45.0, left: 20),
                   child: Icon(
                     Icons.arrow_back,
                     color: Colors.white,
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 45.0, left: 85),
+                  padding: EdgeInsets.only(top: 45.0, left: 85),
                   child: Text(
                     'CheckOut',
                     style: TextStyle(
@@ -61,7 +61,7 @@ class _CheckOutState extends State<CheckOut> {
           //  margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
 
             child: Padding(
-              padding: EdgeInsets.all(4),
+              padding: const EdgeInsets.all(4),
               child: Row(
                 children: [
                   Container(
@@ -70,7 +70,7 @@ class _CheckOutState extends State<CheckOut> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    margin: EdgeInsets.only(right: 10),
+                    margin: const EdgeInsets.only(right: 10),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10),
                       child: Image.network(
@@ -83,12 +83,12 @@ class _CheckOutState extends State<CheckOut> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsets.symmetric(vertical: 10),
+                      padding: const EdgeInsets.symmetric(vertical: 10),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "Sunfuel - Radisson Blu..",
                             style: TextStyle(
                               fontSize: 20,
@@ -96,8 +96,8 @@ class _CheckOutState extends State<CheckOut> {
                               color: Colors.black,
                             ),
                           ),
-                          SizedBox(height: 8),
-                          Row(
+                          const SizedBox(height: 8),
+                          const Row(
                             children: [
                               Icon(Icons.location_on),
                               SizedBox(width: 5),
@@ -110,17 +110,17 @@ class _CheckOutState extends State<CheckOut> {
                               ),
                             ],
                           ),
-                          SizedBox(height: 7),
+                          const SizedBox(height: 7),
                           Row(
                             children: [
-                              Text(
+                              const Text(
                                 "1 Km away",
                                 style: TextStyle(
                                   fontSize: 16,
                                   color: Colors.black54,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Container(
                                 height: 30,
                                 width: 70,
@@ -135,7 +135,7 @@ class _CheckOutState extends State<CheckOut> {
                                     )
                                   ],
                                 ),
-                                child: Row(
+                                child: const Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Icon(
@@ -164,10 +164,10 @@ class _CheckOutState extends State<CheckOut> {
             ),
           ),
           Container(
-            child: Column(
+            child: const Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 20, right: 225),
+                  padding: EdgeInsets.only(top: 20, right: 225),
                   child: Text(
                     "Price Detail",
                     style: TextStyle(
@@ -178,7 +178,7 @@ class _CheckOutState extends State<CheckOut> {
                 ),
                 SizedBox(height: 5),
                 Padding(
-                  padding: const EdgeInsets.only(left: 15, right: 10),
+                  padding: EdgeInsets.only(left: 15, right: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -199,7 +199,7 @@ class _CheckOutState extends State<CheckOut> {
                 ),
                 SizedBox(height: 5),
                 Padding(
-                  padding: const EdgeInsets.only(left: 15, right: 10),
+                  padding: EdgeInsets.only(left: 15, right: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -220,7 +220,7 @@ class _CheckOutState extends State<CheckOut> {
                 ),
                 SizedBox(height: 5),
                 Padding(
-                  padding: const EdgeInsets.only(left: 15, right: 10),
+                  padding: EdgeInsets.only(left: 15, right: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -242,7 +242,7 @@ class _CheckOutState extends State<CheckOut> {
                 SizedBox(height: 5),
 
                 Padding(
-                  padding: const EdgeInsets.only(left: 15, right: 10,top: 10),
+                  padding: EdgeInsets.only(left: 15, right: 10,top: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -270,11 +270,11 @@ class _CheckOutState extends State<CheckOut> {
               ],
             ),
           ),
-          SizedBox(height: 280,),
+          const SizedBox(height: 280,),
           Container(
             alignment: Alignment.bottomCenter,
             width: 330,
-            child:MyButton(text: 'Checkout',),),
+            child:const MyButton(text: 'Checkout',),),
         ],
       ),
     );

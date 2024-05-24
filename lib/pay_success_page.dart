@@ -12,7 +12,7 @@ class _OrderPlacedState extends State<OrderPlaced> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [Colors.green, Colors.green],
             begin: Alignment.topLeft,
@@ -26,7 +26,7 @@ class _OrderPlacedState extends State<OrderPlaced> {
               Padding(
                 padding: const EdgeInsets.only(bottom: 120),
                 child: Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage('assets/checkbox.png'),
                     ),
@@ -41,7 +41,7 @@ class _OrderPlacedState extends State<OrderPlaced> {
                   alignment: Alignment.center,
                   color: Colors
                       .transparent, // Optional overlay color with transparency
-                  child: Column(
+                  child: const Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
@@ -54,7 +54,7 @@ class _OrderPlacedState extends State<OrderPlaced> {
                       ),
                       SizedBox(height: 5), // Spacing between texts
                       Padding(
-                        padding: const EdgeInsets.only(left: 50),
+                        padding: EdgeInsets.only(left: 50),
                         child: Row(children: [
                           Icon(
                             Icons.star,

@@ -11,7 +11,7 @@ class ChargingStations extends StatelessWidget {
         children: [
           Container(
             height: 120,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.center,
@@ -24,17 +24,17 @@ class ChargingStations extends StatelessWidget {
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(23),
                     bottomRight: Radius.circular(23))),
-            child: Row(
+            child: const Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 45.0, left: 20),
+                  padding: EdgeInsets.only(top: 45.0, left: 20),
                   child: Icon(
                     Icons.arrow_back,
                     color: Colors.white,
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 45.0, left: 65),
+                  padding: EdgeInsets.only(top: 45.0, left: 65),
                   child: Text(
                     'Charging Station',
                     style: TextStyle(
@@ -48,7 +48,7 @@ class ChargingStations extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(35),
@@ -59,14 +59,14 @@ class ChargingStations extends StatelessWidget {
                 children: [
                   Expanded(
                     child: ListView(
-                      padding: EdgeInsets.only(top: 5),
+                      padding: const EdgeInsets.only(top: 5),
                       children: [
-                        CartItemSamples(),
+                        const CartItemSamples(),
                         Container(
-                          margin: EdgeInsets.symmetric(
+                          margin: const EdgeInsets.symmetric(
                               vertical: 20, horizontal: 10),
-                          padding: EdgeInsets.all(10),
-                          child: Row(
+                          padding: const EdgeInsets.all(10),
+                          child: const Row(
                             children: [
                               Padding(
                                 padding: EdgeInsets.symmetric(horizontal: 10),

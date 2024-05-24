@@ -16,7 +16,7 @@ class _AddFuelQuantityState extends State<VehicleNumber> {
       appBar: AppBar(),
       body: Center(
         child: ElevatedButton(
-          child: Text('Open Bottom Sheet'),
+          child: const Text('Open Bottom Sheet'),
           onPressed: () {
             showModalBottomSheet(
               context: context,
@@ -28,10 +28,10 @@ class _AddFuelQuantityState extends State<VehicleNumber> {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
-                        Text(
+                        const Text(
                           'Enter Your Vehicle Number',
                           style: TextStyle(
                               fontSize: 24, fontWeight: FontWeight.w500),
@@ -39,7 +39,7 @@ class _AddFuelQuantityState extends State<VehicleNumber> {
                         const SizedBox(
                           height: 40,
                         ),
-                        MyHintTextField(
+                        const MyHintTextField(
                             hintText: Text(
                           "Vehicle Number",
                           style: TextStyle(
@@ -51,7 +51,7 @@ class _AddFuelQuantityState extends State<VehicleNumber> {
                         InkWell(
                           onTap: () {},
                           child: Container(
-                            child: MyButton(
+                            child: const MyButton(
                               text: "Submit",
                             ),
                           ),
