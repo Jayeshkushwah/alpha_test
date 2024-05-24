@@ -26,7 +26,7 @@ class _SelectVehiclesState extends State<SelectVehicles> {
           children: [
             Container(
               height: 130,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.center,
@@ -41,17 +41,17 @@ class _SelectVehiclesState extends State<SelectVehicles> {
                   bottomRight: Radius.circular(23),
                 ),
               ),
-              child: Row(
+              child: const Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 45.0, left: 20),
+                    padding: EdgeInsets.only(top: 45.0, left: 20),
                     child: Icon(
                       Icons.arrow_back,
                       color: Colors.white,
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 45.0, left: 100),
+                    padding: EdgeInsets.only(top: 45.0, left: 100),
                     child: Text(
                       'Add Vehicles',
                       style: TextStyle(
@@ -64,7 +64,7 @@ class _SelectVehiclesState extends State<SelectVehicles> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Padding(
@@ -73,7 +73,7 @@ class _SelectVehiclesState extends State<SelectVehicles> {
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: 12),
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.grey,
@@ -82,9 +82,9 @@ class _SelectVehiclesState extends State<SelectVehicles> {
                       ),
                       child: DropdownButton<String>(
                         value: selectedValue,
-                        hint: Text('Vehicles Type'),
+                        hint: const Text('Vehicles Type'),
                         isExpanded: true,
-                        underline: SizedBox(),
+                        underline: const SizedBox(),
                         items: items.map((String value) {
                           return DropdownMenuItem<String>(
                             value: value,
@@ -102,7 +102,7 @@ class _SelectVehiclesState extends State<SelectVehicles> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Padding(
@@ -116,18 +116,18 @@ class _SelectVehiclesState extends State<SelectVehicles> {
                       borderRadius: BorderRadius.circular(12),
                     ),
                     hintText: 'Asset Capacity/Power (eg: 120kva)',
-                    hintStyle: TextStyle(color: Colors.grey),
+                    hintStyle: const TextStyle(color: Colors.grey),
                   ),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 340,
             ),
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: GestureDetector(
-                child: MyButton(text: 'Next'),
+                child: const MyButton(text: 'Next'),
                 onTap: () {
                   // Navigator.push(context,
                   //     MaterialPageRoute(builder: (context) => EvVehicle()));
