@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:test_prj/components/my_button.dart';
 
-class AddVehicles extends StatefulWidget {
-  const AddVehicles({super.key});
+class SelectVehicles extends StatefulWidget {
+  const SelectVehicles({super.key});
 
   @override
-  State<AddVehicles> createState() => _AddVehiclesState();
+  State<SelectVehicles> createState() => _SelectVehiclesState();
 }
 
-class _AddVehiclesState extends State<AddVehicles> {
+class _SelectVehiclesState extends State<SelectVehicles> {
   String? selectedValue;
   final List<String> items = [
     "Two Wheeler",
