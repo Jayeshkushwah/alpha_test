@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_prj/select_address.dart';
 import 'payment_type_page.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PaymentType(),
+      home: SelectAddress(),
     );
   }
 }

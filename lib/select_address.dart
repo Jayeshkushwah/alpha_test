@@ -297,7 +297,7 @@ class _SelectAddressState extends State<SelectAddress> {
                                     value = true;
                                   }),
                                 ),
-                                Text(
+                                const Text(
                                   "Same as Shipping Address",
                                   style: TextStyle(
                                       fontSize: 18,
